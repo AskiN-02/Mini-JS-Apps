@@ -13,7 +13,9 @@ function setClock() {
 	const minsDegress = mins * 6 + 90;
 	minHand.style.transform = `rotate(${minsDegress}deg)`;
 
-	console.log(secondsDegrees);
+	const hour = now.getHours();
+	const hourDegress = hour * 30 + 90;
+	hourHand.style.transform = `rotate(${hourDegress}deg)`;
 }
 
 setInterval(setClock, 1000);
