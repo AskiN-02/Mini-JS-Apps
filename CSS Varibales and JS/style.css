@@ -1,0 +1,41 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+:root {
+	--base: #ffc600;
+	--spacing: 10px;
+	--blur: 10px;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	min-height: 100vh;
+	font-family: 'Montserrat', sans-serif;
+	color: #c3073f;
+	background-color: #303030;
+}
+.title {
+	font-size: 3rem;
+}
+.title__color {
+	color: var(--base);
+}
+.subTitle {
+	color: #fff;
+	margin: 0.5em 0 1em 0;
+}
+label {
+	font-size: 1.6rem;
+}
+img {
+	padding: var(--spacing);
+	margin-top: 2em;
+	background-color: var(--base);
+	filter: blur(var(--blur));
+}
